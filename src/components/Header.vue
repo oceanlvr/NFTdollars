@@ -4,13 +4,13 @@
             <div class="left-container">
                 <div class="header-title">NFTdollars</div>
                 <div class="header-navigation">
-                    <div>Home</div>
-                    <div>Docs</div>
-                    <div>Borrow</div>
+                    <div><router-link to="/">Home</router-link></div>
+                    <div><router-link to="/">Docs</router-link></div>
+                    <div><router-link to="/">Borrow</router-link></div>
                 </div>
             </div>
             <div>
-                <el-button round>Connect Wallet</el-button>
+                <el-button color="transparent" round>Connect Wallet</el-button>
             </div>
         </div>
         <div class="line"></div>
@@ -22,6 +22,11 @@
 </script>
     
 <style scoped>
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-container {
     height: 82px;
     padding: 16px 60px;
@@ -48,6 +53,7 @@
     font-size: 22.5px;
     line-height: 34px;
     text-align: center;
+    color: #FBF8F0;
 }
 
 .header-navigation {
@@ -62,26 +68,23 @@
     font-size: 12px;
     line-height: 18px;
     text-align: center;
+    color: #FBF8F0;
 }
 
-.header-button {
+.el-button {
     width: 154px;
     height: 34px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: #FBF8F0;
-    background-color: transparent;
     border: 1.5px solid #FBF8F0;
-    border-radius: 22.125px;
+    color: #FBF8F0;
 }
 
 .line {
     margin: 5px auto;
     height: 0px;
-    border: 1px solid rgba(0, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 </style>

@@ -5,25 +5,29 @@
                         font-size: 120px;
                         line-height: 180px;
                         text-align: center;
-                        text-transform: uppercase;">
+                        text-transform: uppercase;
+                        color: #FBF8F0;">
                 0% INTEREST LOANS
             </div>
             <div style="font-weight: 400;
                         font-size: 30px;
                         line-height: 45px;
-                        text-align: center;">
+                        text-align: center;
+                        color: #FBF8F0;">
                 Borrow LUSD against ETH
             </div>
         </div>
         <div class="button-container">
-            <div><el-button round>Borrow Now</el-button></div>
-            <div><el-button round>Learn More</el-button></div>
+            <div><el-button color="transparent" round>Borrow Now</el-button></div>
+            <div><el-button color="transparent" round>Learn More</el-button></div>
         </div>
         <div class="total-value-container">
-            <div style="font-weight: 700;font-size: 16px;line-height: 100%;text-transform: uppercase;">Total Value Locked
+            <div style="font-weight: 700;font-size: 16px;line-height: 100%;text-transform: uppercase;color: #FBF8F0;">
+                Total Value Locked
             </div>
-            <div style="font-weight: 300;font-size: 40px;line-height: 100%;text-transform: uppercase;color: #FFDD6F;">$
-                754,692,844</div>
+            <div style="font-weight: 300;font-size: 40px;line-height: 100%;text-transform: uppercase;color: #FFDD6F;">
+                $ 754,692,844
+            </div>
         </div>
         <div style="display: flex; flex-direction: column; padding: 80px 288px; gap: 10px; height: 400px;">
             <div class="block-container">
@@ -73,6 +77,9 @@
                 </div>
             </div>
         </div>
+        <div style="position: absolute; top: 210px; right: 190px;">
+            <img src="@/assets/25_low.png">
+        </div>
     </div>
 </template>
 
@@ -102,21 +109,18 @@
     gap: 16px;
     width: 330px;
     height: 136px;
+    margin-top: 45px;
 }
 
-.button-container .index-button {
+.el-button {
     width: 330px;
     height: 60px;
-    border: 2.25px solid #FBF8F0;
-    border-radius: 45.75px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+    border: 2.25px solid #FBF8F0;
     color: #FBF8F0;
-    background-color: transparent;
 }
 
 .button-container .index-button {
@@ -145,7 +149,7 @@
 .block-divider {
     width: 1px;
     height: 300px;
-    background: rgba(0, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .index-block {

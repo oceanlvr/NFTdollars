@@ -4,11 +4,20 @@
 </script>
 
 <template>
-  <Header></Header>
-  <router-view></router-view>
-  <Footer></Footer>
+  <div class="background">
+    <Header></Header>
+    <router-view></router-view>
+  </div>
+  <div style="background-color: #FBF8F0;">
+    <Footer></Footer>
+  </div>
+  
 </template>
 
 <style scoped>
-
+.background {
+  background: url("@/assets/bg.png"); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 </style>
