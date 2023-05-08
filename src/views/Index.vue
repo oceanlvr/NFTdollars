@@ -16,8 +16,8 @@
             </div>
         </div>
         <div class="button-container">
-            <el-button>Borrow Now</el-button>
-            <el-button >Learn More</el-button>
+            <div><el-button round>Borrow Now</el-button></div>
+            <div><el-button round>Learn More</el-button></div>
         </div>
         <div class="total-value-container">
             <div style="font-weight: 700;font-size: 16px;line-height: 100%;text-transform: uppercase;">Total Value Locked
@@ -44,9 +44,9 @@
                 <div class="block-divider"></div>
                 <div class="index-block">
                     <div class="block-icon-container">
-                        <img src="@/assets/index_block2_icon1.svg" style="position: absolute;">
-                        <!-- <img src="@/assets/index_block2_icon2.svg" style="position: absolute; height: 40px; width: 32px; left: 8px; top: 4px;">
-                        <img src="@/assets/index_block2_icon3.svg" style="position: absolute; height: 12px; width: 12px; left: 32px; top: 32px;"> -->
+                        <img src="@/assets/index_block2_icon1.svg" style="position: absolute; height: 10.04px; width: 11.04px; left: 4.48px; top: 3.97px;">
+                        <img src="@/assets/index_block2_icon2.svg" style="position: absolute; height: 40px; width: 32px; left: 8px; top: 4px;">
+                        <img src="@/assets/index_block2_icon3.svg" style="position: absolute; height: 12px; width: 12px; left: 32px; top: 32px;">
                     </div>
                     <div class="index-block-inner">
                         <div class="block-title-font">110% Collateral Ratio</div>

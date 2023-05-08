@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div>
-                <el-button >Connect Wallet</el-button>
+                <el-button round>Connect Wallet</el-button>
             </div>
         </div>
         <div class="line"></div>
