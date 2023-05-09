@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="button-container">
-            <div><el-button color="transparent" round>Borrow Now</el-button></div>
-            <div><el-button color="transparent" round>Learn More</el-button></div>
+            <div><button class="index-button">Borrow Now</button></div>
+            <div><button class="index-button">Learn More</button></div>
         </div>
         <div class="total-value-container">
             <div style="font-weight: 700;font-size: 16px;line-height: 100%;text-transform: uppercase;color: #FBF8F0;">
@@ -33,10 +33,7 @@
             <div class="block-container">
                 <div class="index-block">
                     <div class="block-icon-container">
-                        <img src="@/assets/index_block1_icon2.svg"
-                            style="position: absolute; height: 40.14px; width: 40.14px; left: 3.93px; top: 3.93px;">
-                        <img src="@/assets/index_block1_icon1.svg"
-                            style="position: absolute; height: 12px; width: 12px; left: 18px; top: 18px;">
+                        <img src="@/assets/index/index_block1_icon.svg">
                     </div>
                     <div class="index-block-inner">
                         <div class="block-title-font">0% Interest Rate</div>
@@ -48,9 +45,7 @@
                 <div class="block-divider"></div>
                 <div class="index-block">
                     <div class="block-icon-container">
-                        <img src="@/assets/index_block2_icon1.svg" style="position: absolute; height: 10.04px; width: 11.04px; left: 4.48px; top: 3.97px;">
-                        <img src="@/assets/index_block2_icon2.svg" style="position: absolute; height: 40px; width: 32px; left: 8px; top: 4px;">
-                        <img src="@/assets/index_block2_icon3.svg" style="position: absolute; height: 12px; width: 12px; left: 32px; top: 32px;">
+                        <img src="@/assets/index/index_block2_icon.svg">
                     </div>
                     <div class="index-block-inner">
                         <div class="block-title-font">110% Collateral Ratio</div>
@@ -63,10 +58,7 @@
                 <div class="block-divider"></div>
                 <div class="index-block">
                     <div class="block-icon-container">
-                        <img src="@/assets/index_block3_icon1.svg"
-                            style="position: absolute; height: 24px; width: 16px; left: 16px; top: 12px;">
-                        <img src="@/assets/index_block3_icon2.svg"
-                            style="position: absolute; height: 40px; width: 40px; left: 4px; top: 4px;">
+                        <img src="@/assets/index/index_block3_icon.svg">
                     </div>
                     <div class="index-block-inner">
                         <div class="block-title-font">Unstoppable Stablecoin</div>
@@ -77,8 +69,8 @@
                 </div>
             </div>
         </div>
-        <div style="position: absolute; top: 210px; right: 190px;">
-            <img src="@/assets/25_low.png">
+        <div style="position: absolute; top: 210px; right: 190px;pointer-events: none;">
+            <img src="@/assets/index/25_low.png">
         </div>
     </div>
 </template>
@@ -112,19 +104,28 @@
     margin-top: 45px;
 }
 
-.el-button {
+.button-container .index-button {
     width: 330px;
     height: 60px;
+    border: 2.25px solid #FBF8F0;
+    border-radius: 45.75px;
+    background-color: transparent;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    border: 2.25px solid #FBF8F0;
+    line-height: 36px;
+    text-align: center;
     color: #FBF8F0;
 }
 
-.button-container .index-button {
+.button-container .index-button:hover {
     cursor: pointer;
+    background-color: rgba(80, 80, 80, 0.4);
+}
+
+.button-container .index-button:active {
+    background-color: rgba(4, 4, 4, 0.15);
 }
 
 .total-value-container {

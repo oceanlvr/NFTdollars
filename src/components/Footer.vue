@@ -40,16 +40,16 @@
             <div class="left bottom-bar-text-font">Copyright © 2023 NFTdollars. All rights reserved.</div>
             <div class="bottom-bar-right">
                 <a href="https://twitter.com/">
-                    <div class="icon-container"><img src="@/assets/twitter.svg"></div>
+                    <div class="icon-container"><img src="@/assets/footer/twitter.svg"></div>
                 </a>
                 <a href="https://discord.com/">
-                    <div class="icon-container"><img src="@/assets/discord.svg"></div>
+                    <div class="icon-container"><img src="@/assets/footer/discord.svg"></div>
                 </a>
                 <a href="https://github.com/">
-                    <div class="icon-container"><img src="@/assets/github.svg"></div>
+                    <div class="icon-container"><img src="@/assets/footer/github.svg"></div>
                 </a>
                 <a href="https://telegram.org/">
-                    <div class="icon-container"><img src="@/assets/telegram.svg"></div>
+                    <div class="icon-container"><img src="@/assets/footer/telegram.svg"></div>
                 </a>
             </div>
         </div>
@@ -192,4 +192,6 @@ a {
     border-radius: 400px;
     width: 20px;
     height: 20px;
-}</style>
+}
+
+</style>

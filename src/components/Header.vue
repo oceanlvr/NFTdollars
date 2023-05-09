@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div>
-                <el-button color="transparent" round>Connect Wallet</el-button>
+                <button class="header-button">Connect Wallet</button>
             </div>
         </div>
         <div class="line"></div>
@@ -80,6 +80,30 @@ a {
     font-size: 12px;
     border: 1.5px solid #FBF8F0;
     color: #FBF8F0;
+}
+
+.header-button {
+    width: 154px;
+    height: 34px;
+    border: 1.5px solid #FBF8F0;
+    border-radius: 22.125px;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FBF8F0;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    background-color: rgba(80, 80, 80, 0.4);
+}
+
+.header-button:active {
+    background-color: rgba(4, 4, 4, 0.15);
 }
 
 .line {
