@@ -11,13 +11,16 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "element-plus": "^2.3.4",
+    "ethers": "^5.7.2",
+    "sass": "^1.62.1",
+    "scss": "^0.2.4",
     "vue": "^3.2.47",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "web3": "^1.10.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
     "unplugin-auto-import": "^0.15.3",
-    "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.2"
   }

@@ -4,12 +4,12 @@
         <div class="footer">
             <div class="footer-first-block">
                 <div style="width: 160px;">
-                    <img src="@/assets/logo.svg" width="32" height="32">
+                    <img src="@/assets/logo.svg" width="32px" height="32px">
                 </div>
                 <div class="footer-navigation">
-                    <div><router-link to="/">Home</router-link></div>
-                    <div><router-link to="/">Docs</router-link></div>
-                    <div><router-link to="/">Borrow</router-link></div>
+                    <div @click="router.push('/')">Home</div>
+                    <div @click="router.push('/wallet')">Docs</div>
+                    <div @click="router.push('/riskyTrove')">Borrow</div>
                 </div>
             </div>
             <div style="width: 1px;height: 316px;background: #E6E8EC;"></div>
@@ -27,10 +27,7 @@
             <div class="footer-third-block">
                 <div class="footer-title-font">NEWSLETTER</div>
                 <div class="footer-text-font">Subscribe to our newsletter for updates</div>
-                <div style="position: relative;">
-                    <input class="footer-input" placeholder="enter your email">
-                    <el-button color="#F4D471" circle :icon="Right" style="color: #FBF8F0; position: absolute; top: 10px; right: 15px"></el-button>
-                </div>
+                <div>enter your email</div>
             </div>
         </div>
     </div>
@@ -39,33 +36,21 @@
         <div class="bottom-bar">
             <div class="left bottom-bar-text-font">Copyright © 2023 NFTdollars. All rights reserved.</div>
             <div class="bottom-bar-right">
-                <a href="https://twitter.com/">
-                    <div class="icon-container"><img src="@/assets/footer/twitter.svg"></div>
-                </a>
-                <a href="https://discord.com/">
-                    <div class="icon-container"><img src="@/assets/footer/discord.svg"></div>
-                </a>
-                <a href="https://github.com/">
-                    <div class="icon-container"><img src="@/assets/footer/github.svg"></div>
-                </a>
-                <a href="https://telegram.org/">
-                    <div class="icon-container"><img src="@/assets/footer/telegram.svg"></div>
-                </a>
+                <div class="icon-container"><img src="@/assets/twitter.svg"></div>
+                <div class="icon-container"><img src="@/assets/discord.svg"></div>
+                <div class="icon-container"><img src="@/assets/github.svg"></div>
+                <div class="icon-container"><img src="@/assets/telegram.svg"></div>
             </div>
         </div>
     </div>
 </template>
     
 <script setup>
-import {Right} from '@element-plus/icons-vue'
+
+import router from "@/router/index.js";
 </script>
     
 <style scoped>
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .footer-divider {
     height: 1px;
     background: #777E91;
@@ -80,7 +65,6 @@ a {
 
 .footer-first-block {
     width: 350px;
-    height: 296px;
     padding: 80px 0px 0px;
     display: flex;
 }
@@ -122,7 +106,6 @@ a {
 
 .footer-second-block {
     width: 168px;
-    height: 296px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -139,28 +122,8 @@ a {
     gap: 40px;
 }
 
-.footer-input {
-    border: 2px solid #E6E8EC;
-    border-radius: 90px;
-    width: 240px;
-    height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #777E91;
-    padding-left: 15px;
-    background-color: #FBF8F0;
-}
-
-.footer-input:focus {
-    border-color: #777E90;
-    outline: 2px solid #777E90; 
-}
-
 .bottom-bar {
-    height: 69px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,5 +156,4 @@ a {
     width: 20px;
     height: 20px;
 }
-
 </style>
